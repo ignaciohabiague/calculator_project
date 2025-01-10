@@ -10,24 +10,24 @@
     <div class="calculator">
         <input type="text" class="display" id="display" disabled value="0">
         <div class="buttons">
-            <button class="span-2">Clear</button>
-            <button>⌫</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button class="span-2">0</button>
-            <button>.</button>
-            <button>=</button>
+            <button onclick="clearDisplay()" class="span-2">Clear</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="setOperator('/')">/</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperator('*')">*</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperator('-')">-</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperator('+')">+</button>
+            <button onclick="appendNumber('0')" class="span-2">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
